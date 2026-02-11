@@ -1,23 +1,147 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+/*google font*/
 
-
-header {
-position: sticky;
-top: 0px;
-z-index: 3;
+@import url("https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Google Sans", sans-serif;
 }
+/*navbar responsive*/
+.navbar{
+ background-color: #060B11F2;
+ height: 80px;
+opacity: 95%;
+}
+
+.bg-offcanvas{
+   background-color: rgba(37, 37, 37, 0.822);
+}
+/*ccs de boton login*/
+.login-buttom {
+  background-color: rgba(141, 145, 141, 0.692);
+  color:white;
+  font-size:14px;
+  padding: 8px 20px;
+  border-radius: 50px;
+ 
+  text-decoration: none;
+  transition: 0.3s background-color;
+}
+.login-buttom:hover {
+background-color: rgb(60, 63, 250);
+}
+/**/
+.navbar-toggler{
+  border: none;
+  font-size: 1.25rem;
+  
+}
+.navbar-toggler:focus, .btn-close:focus{
+  box-shadow: none;
+  outline:none;
+}
+.nav-link{
+  color: rgb(138, 136, 136);
+  font-weight: 500;
+  position: relative;
+   text-decoration: none;
+  transition: 0.3s;
+ 
+}
+.nav-link:hover, .nav-link.active {
+  color: white;
+
+ border-bottom: 2px solid rgb(68, 50, 224);
+}
+
+/*termina navbar responsive*/
+/*boton de busqueda*/
+  .search-container {
+      position: relative;
+      display: flex;
+      align-items: center;
+    }
+    .search-input {
+      width: 0;
+      opacity: 0;
+      transition: all 0.4s ease;
+      border-radius: 50px;
+    }
+    .search-container.active .search-input {
+      width: 900px;
+      opacity: 1;
+      padding-left: 15px;
+      margin-right: 10px;
+      
+    }
+    .search-btn {
+      border-radius: 50%;
+      border: 0;
+      width: 40px;
+      height: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color:rgb(116, 107, 107);
+    }
+   
+    /*termina boton de busqueda*/
 body {
   min-height: 100vh;
+  margin-top: 90px;
   display: flex;
   flex-direction: column;
 }
 main {
   flex-grow: 1;
 }
-.bg-footer{
-    background-color: #0A1015;
-}
-p,h5 {
-    font-family: "DM Sans", sans-serif;
 
+/*footer*/
+footer{
+  background-color: #060B11F2;
+  opacity: 88%;
+}
+.navbar-mobile-fixed {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1030;
+  }
+
+@media (max-width: 991.98px) {
+  .navbar-mobile-fixed {
+    position: relative;
+    top: 0;
+    width: 100%;
+    z-index: 1030;
+    padding: 0;
+  }
+body {
+  min-height: 100vh;
+  margin-top: 0px;
+  display: flex;
+  flex-direction: column;
+}
+}
+
+
+
+@media (min-width: 992px){
+.nav-link::before{
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%) ;
+  width: 100%;
+  height: 3px;
+  background-color:  rgb(60, 63, 250);
+  visibility: hidden;
+  transition: 0.3s ease-in-out;
+}
+.nav-link:hover::before ,.nav-link.active::before{
+  width: 100%;
+  visibility: visible;
+}
 }
