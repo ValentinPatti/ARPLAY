@@ -197,6 +197,21 @@ footer {
   z-index: 1030;
 }
 
+/* Página película */
+.zoom{
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.zoom img{
+  transition: transform 0.4s;
+}
+
+.zoom:hover img{
+  transform: scale(1.1);
+}
+/* Fin página película */
+
 @media (max-width: 991.98px) {
   .navbar-mobile-fixed {
     position: relative;
