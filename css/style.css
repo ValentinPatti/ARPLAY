@@ -211,7 +211,33 @@ footer {
   transform: scale(1.1);
 }
 /* Fin página película */
+/*inicio pagina Nosotros*/
+.carousel-item {
+  height: 80vh; 
+}
 
+.carousel-item img {
+  height: 100%;
+  object-fit: cover; 
+}
+
+.control-white {
+  width: 55px;
+  height: 55px;
+  top: 50%;
+  margin-left: 10px;
+  transform: translateY(-50%);
+  background-color: white;
+  border-radius: 50%;
+}
+
+.control-white .carousel-control-prev-icon{
+  filter: invert(1);
+}
+.control-white .carousel-control-next-icon{
+  filter: invert(1);
+}
+/*fin pagina Nosotros*/
 @media (max-width: 991.98px) {
   .navbar-mobile-fixed {
     position: relative;
