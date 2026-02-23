@@ -10,7 +10,7 @@
 /*navbar responsive*/
 .navbar {
   background-color: #060b11f2;
-  height: 80px;
+  height: 90px;
   opacity: 95%;
 }
 
@@ -65,7 +65,7 @@
 .search-input {
   width: 0;
   opacity: 0;
-  transition: all 0.4s ease;
+ transition: all 0.4s ease;
   border-radius: 50px;
 }
 .search-container.active .search-input {
@@ -81,9 +81,13 @@
   width: 40px;
   height: 40px;
   display: flex;
+  position: relative;
   align-items: center;
   justify-content: center;
   background-color: rgb(116, 107, 107);
+}
+.search-btn:hover {
+  background-color: rgb(60, 63, 250);
 }
 
 /*termina boton de busqueda*/
@@ -151,7 +155,8 @@ main {
   line-height: 1.35;
 }
 
-.btn-play {
+.btn-play,
+.btn1 {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -170,7 +175,8 @@ main {
   height: 16px;
   flex: 0 0 auto;
 }
-.btn-play:hover {
+.btn-play:hover,
+.btn1:hover {
   border: 0.1px solid #e9e9e9;
   box-shadow:
     0 0 8px rgba(255, 255, 255, 0.6),
@@ -363,7 +369,7 @@ main {
 /*footer*/
 footer {
   background-color: #060b11f2;
-  opacity: 88%;
+  opacity: 95%;
 }
 .navbar-mobile-fixed {
   position: fixed;
@@ -372,6 +378,47 @@ footer {
   z-index: 1030;
 }
 
+/* Página película */
+.zoom{
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.zoom img{
+  transition: transform 0.4s;
+}
+
+.zoom:hover img{
+  transform: scale(1.1);
+}
+/* Fin página película */
+/*inicio pagina Nosotros*/
+.carousel-item {
+  height: 80vh; 
+}
+
+.carousel-item img {
+  height: 100%;
+  object-fit: cover; 
+}
+
+.control-white {
+  width: 55px;
+  height: 55px;
+  top: 50%;
+  margin-left: 10px;
+  transform: translateY(-50%);
+  background-color: white;
+  border-radius: 50%;
+}
+
+.control-white .carousel-control-prev-icon{
+  filter: invert(1);
+}
+.control-white .carousel-control-next-icon{
+  filter: invert(1);
+}
+/*fin pagina Nosotros*/
 @media (max-width: 991.98px) {
   .navbar-mobile-fixed {
     position: relative;
@@ -386,6 +433,12 @@ footer {
     display: flex;
     flex-direction: column;
   }
+  .search-container .search-input {
+  width: 700px;
+  opacity: 1;
+  padding-left: 15px;
+  margin-right: 10px;
+}
 }
 
 @media (min-width: 992px) {
@@ -406,6 +459,8 @@ footer {
     width: 100%;
     visibility: visible;
   }
+
+  
 }
 
 
