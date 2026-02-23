@@ -103,7 +103,7 @@ body.pagina-portada {
 main {
   flex-grow: 1;
 }
-/*Estilos de portada*/
+/*Estilos de portada - mobile first */
 .portada {
   position: relative;
   min-height: 100vh;
@@ -111,11 +111,25 @@ main {
   display: flex;
   align-items: flex-end;
   padding: clamp(2.5rem, 6vh, 6rem) 0;
-  background-image: url(/Assets/image/BANNER.png);
+  background-image: url("../Assets/image/bannermobile.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   overflow: hidden;
+}
+
+/* Tablet: banner tablet */
+@media (min-width: 768px) {
+  .portada {
+    background-image: url("../Assets/image/banner tablet.png");
+  }
+}
+
+/* Desktop: banner desktop */
+@media (min-width: 992px) {
+  .portada {
+    background-image: url("../Assets/image/banner desktop.png");
+  }
 }
 
 .portada-overlay {
