@@ -255,115 +255,28 @@ main {
   color: #fff;
 }
 
-/* Carruseles tipo Figma: dos hileras, cards anchas y bajas */
-.fila-carrusel {
-  margin-bottom: 2.5rem;
-}
-.titulo-fila {
+/* Secciones de la pagina principal */
+.sugerencias-section {
+  background-color: #0a1015;
+  width: 100%;
   color: #fff;
-  font-size: 1.5rem;
-  font-weight: 500;
-  margin-bottom: 1rem;
-  padding-left: 0.25rem;
 }
-.contenedor-carrusel {
-  position: relative;
-  overflow: hidden;
-  max-width: 1320px;
-  margin: 0 auto;
-}
-.carrusel-infinito {
-  display: flex;
-  overflow-x: auto;
-  overflow-y: hidden;
-  gap: 0.75rem;
-  padding: 0.5rem 3rem;
-  scrollbar-width: none;
-  -ms-overflow-style: none;
-  scroll-behavior: smooth;
-}
-.carrusel-infinito::-webkit-scrollbar {
-  display: none;
-}
-.carrusel-grupo {
-  display: flex;
-  gap: 0.75rem;
-  flex-shrink: 0;
-}
-/* Cards anchas y bajas como en Figma (rectangulares) */
-.tarjeta-carrusel {
-  flex-shrink: 0;
-  width: 320px;
-  height: 180px;
+.sugerencia-card {
+  background-color: #111820;
+  border: 1px solid #2a2a2a;
   border-radius: 8px;
   overflow: hidden;
-  background: #1a1a1a;
-  position: relative;
-  display: block;
-  border: 1px solid #333;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
 }
-.tarjeta-carrusel img {
+.sugerencia-card img {
   width: 100%;
-  height: 100%;
+  height: 200px;
   object-fit: cover;
-  display: block;
 }
-.tarjeta-titulo {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  padding: 0.5rem 0.75rem;
-  background: linear-gradient(to top, rgba(0, 0, 0, 0.85), transparent);
-  color: #fff;
-  font-size: 0.9rem;
-  font-weight: 500;
-}
-.flecha {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  z-index: 2;
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  border: none;
-  background: rgba(255, 255, 255, 0.9);
-  color: #333;
-  font-size: 1.25rem;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 0;
-  line-height: 1;
-}
-.flecha:hover {
-  background: #fff;
-}
-.flecha-izq {
-  left: 0.5rem;
-}
-.flecha-der {
-  right: 0.5rem;
-}
-@media (max-width: 767px) {
-  .contenedor-carrusel {
-    max-width: 100%;
-  }
-  .tarjeta-carrusel {
-    width: 240px;
-    height: 135px;
-  }
-  .titulo-fila {
-    font-size: 1.25rem;
-  }
-}
-@media (min-width: 768px) {
-  .carrusel-infinito {
-    padding: 0.5rem 3.5rem;
-  }
+.banner-promo {
+  background-color: #111820;
+  border: 1px solid #2a2a2a;
+  border-radius: 12px;
+  padding: 40px 20px;
 }
 
 /*footer*/
