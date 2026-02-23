@@ -139,6 +139,12 @@ main {
   text-align: left;
   font-family: "Google Sans", sans-serif;
 }
+.portada-titulo {
+  font-size: clamp(2rem, 4vw, 3.2rem);
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 0.5rem;
+}
 .portada .portada-text1 {
   font-size: clamp(0.8rem, 1.2vw, 0.95rem);
   margin-bottom: 0.75rem;
@@ -177,10 +183,7 @@ main {
 }
 .btn-play:hover,
 .btn1:hover {
-  border: 0.1px solid #e9e9e9;
-  box-shadow:
-    0 0 8px rgba(255, 255, 255, 0.6),
-    0 0 16px rgba(255, 255, 255, 0.4);
+  background-color: rgb(60, 63, 250);
 }
 .btn-save {
   display: inline-flex;
@@ -197,10 +200,7 @@ main {
   transition: 0.2s ease;
 }
 .btn-save:hover {
-  border: 0.1px solid #e9e9e9;
-  box-shadow:
-    0 0 8px rgba(255, 255, 255, 0.6),
-    0 0 16px rgba(255, 255, 255, 0.4);
+  background-color: rgb(60, 63, 250);
 }
 .grupo-botones {
   display: flex;
@@ -273,7 +273,10 @@ main {
   object-fit: cover;
 }
 .banner-promo {
-  background-color: #111820;
+  background-image: url(/Assets/image/fondodecardbanner.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   border: 1px solid #2a2a2a;
   border-radius: 12px;
   padding: 40px 20px;
